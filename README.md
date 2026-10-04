@@ -1,6 +1,14 @@
 # H3nry 2.0
 
-Ground-up rebuild of H3nry around the Value Frontier, with a block-built exploration theme.
+Ground-up rebuild of H3nry around the Value Frontier, with an original block-built exploration theme.
+
+## Current product
+
+- Interactive quality-versus-price Value Frontier
+- Category, price ceiling, and owned-watch filters
+- Selectable watch signals with synchronized field notes
+- Accessible data-table alternative
+- Responsive discovery shortlist and scoring methodology
 
 ## Source of truth
 
@@ -18,6 +26,7 @@ npm run dev
 npm run build
 npm run typecheck
 npm run lint
+npm test
 ```
 
 The application uses native Next.js so local development, GitHub builds, and Vercel production share the same runtime and build command.
