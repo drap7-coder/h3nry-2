@@ -64,15 +64,21 @@ export function FrontierExplorer() {
         <button className="collection-button" onClick={() => setOwnedOnly(!ownedOnly)} aria-pressed={ownedOnly}>{ownedOnly ? "Showing collection" : "My collection"}<span>{portfolio.length}</span></button>
       </nav>
 
-      <section className="legacy-hero" id="top">
-        <div className="hero-orbit" aria-hidden="true"><div className="watch-silhouette" /><div className="orbit-ring" /></div>
+      <section className="atlas-hero" id="top">
         <div className="hero shell">
-        <div className="hero-copy">
-          <p className="eyebrow legacy-eyebrow">Ownership · Market · Alternatives · Value</p>
-          <h1 className="hero-wordmark">H<span className="red-three">3</span>nry</h1>
-          <p className="lede legacy-lede">Own, follow, price, and find similar watches — plus Watch Value Index scoring when you want to know how much watch you&apos;re actually getting.</p>
-          <div className="legacy-actions"><a className="legacy-primary" href="#frontier">Open Value Index</a><a className="legacy-secondary" href="#shortlist">Explore watches</a></div>
-        </div>
+          <div className="hero-copy">
+            <p className="eyebrow">The modern watch field guide / Signal 2.0</p>
+            <h1>Mine the market.<br /><em>Find the frontier.</em></h1>
+            <p className="lede">Explore where enduring quality meets real-world value. Every watch is mapped from movement, finishing, heritage, scarcity and verified market signals.</p>
+            <div className="hero-actions"><a className="primary-action" href="#frontier">Explore the frontier <span aria-hidden="true">↘</span></a><span className="live-signal"><i /> Atlas live</span></div>
+          </div>
+          <div className="hero-artifact" aria-label="H3nry blue block-built dive watch">
+            <div className="artifact-grid" aria-hidden="true" />
+            <div className="artifact-cube cube-one" aria-hidden="true" /><div className="artifact-cube cube-two" aria-hidden="true" /><div className="artifact-cube cube-three" aria-hidden="true" />
+            <div className="artifact-image"><Image src="/h3nry-watch-lab-logo.png" width={1254} height={1254} priority alt="Blue block-built H3nry dive watch surrounded by floating cubes" /></div>
+            <div className="artifact-label"><span>Field object / 001</span><strong>THE BLUE FRONTIER</strong></div>
+            <div className="artifact-coordinates">40.7128° N<br />74.0060° W</div>
+          </div>
         </div>
       </section>
 

@@ -6,8 +6,8 @@ const root = new URL("../", import.meta.url);
 
 test("ships the Biome Atlas Value Frontier experience", async () => {
   const source = await readFile(new URL("app/frontier-explorer.tsx", root), "utf8");
-  assert.match(source, /Ownership · Market · Alternatives · Value/);
-  assert.match(source, /className="red-three">3/);
+  assert.match(source, /Mine the market/);
+  assert.match(source, /THE BLUE FRONTIER/);
   assert.match(source, /h3nry-watch-lab-logo\.png/);
   assert.match(source, /The Value Frontier/);
   assert.match(source, /type="range"/);
