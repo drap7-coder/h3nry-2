@@ -58,22 +58,20 @@ export function FrontierExplorer() {
   return (
     <main>
       <nav className="nav shell" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label="H3nry home"><span className="brand-cube" aria-hidden="true">H</span><span>H3NRY <b>2.0</b></span></a>
+        <a className="brand old-wordmark" href="#top" aria-label="H3nry home">H<span className="red-three">3</span>nry <small>+ WVI</small></a>
         <div className="nav-links"><a href="#frontier">Frontier</a><a href="#shortlist">Shortlist</a><a href="#method">Method</a></div>
         <button className="collection-button" onClick={() => setOwnedOnly(!ownedOnly)} aria-pressed={ownedOnly}>{ownedOnly ? "Showing collection" : "My collection"}<span>{portfolio.length}</span></button>
       </nav>
 
-      <section className="hero shell" id="top">
+      <section className="legacy-hero" id="top">
+        <div className="hero-orbit" aria-hidden="true"><div className="watch-silhouette" /><div className="orbit-ring" /></div>
+        <div className="hero shell">
         <div className="hero-copy">
-          <p className="eyebrow">The modern watch field guide</p>
-          <h1>Mine the market.<br /><em>Find the frontier.</em></h1>
-          <p className="lede">Explore where enduring quality meets real-world value. Every watch is mapped from movement, finishing, heritage, scarcity and verified market signals.</p>
-          <a className="primary-action" href="#frontier">Explore the frontier <span aria-hidden="true">↘</span></a>
+          <p className="eyebrow legacy-eyebrow">Ownership · Market · Alternatives · Value</p>
+          <h1 className="hero-wordmark">H<span className="red-three">3</span>nry</h1>
+          <p className="lede legacy-lede">Own, follow, price, and find similar watches — plus Watch Value Index scoring when you want to know how much watch you&apos;re actually getting.</p>
+          <div className="legacy-actions"><a className="legacy-primary" href="#frontier">Open Value Index</a><a className="legacy-secondary" href="#shortlist">Explore watches</a></div>
         </div>
-        <div className="hero-map" aria-hidden="true">
-          <div className="sun" /><div className="terrain terrain-one" /><div className="terrain terrain-two" />
-          <div className="hero-marker marker-a">01</div><div className="hero-marker marker-b">02</div><div className="hero-marker marker-c">03</div>
-          <div className="coordinate">40.7128° N<br />74.0060° W</div>
         </div>
       </section>
 
@@ -129,7 +127,7 @@ export function FrontierExplorer() {
 
       <section id="method" className="method"><div className="shell method-grid"><div><p className="eyebrow light">How the map is made / 03</p><h2>Signal, not hype.</h2></div><div className="method-steps"><article><span>01</span><h3>Measure the object</h3><p>Movement, construction, finishing and functional integrity establish the quality baseline.</p></article><article><span>02</span><h3>Read the market</h3><p>Observed prices, depth, volatility and service risk ground the score in reality.</p></article><article><span>03</span><h3>Map the frontier</h3><p>We surface the pieces delivering the most enduring substance per dollar.</p></article></div></div></section>
 
-      <footer className="footer shell"><a className="brand" href="#top"><span className="brand-cube">H</span><span>H3NRY <b>2.0</b></span></a><p>Independent watch intelligence.<br />Built for the curious.</p><a href="#top">Back to top ↑</a></footer>
+      <footer className="footer shell"><a className="brand old-wordmark" href="#top">H<span className="red-three">3</span>nry <small>+ WVI</small></a><p>Independent watch intelligence.<br />Built for the curious.</p><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
