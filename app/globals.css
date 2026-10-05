@@ -35,7 +35,7 @@ h1 em { color:var(--moss); font-style:normal; }
 .live-signal { display:flex; align-items:center; gap:8px; color:var(--moss); font:800 9px var(--font-geist-mono); letter-spacing:.12em; text-transform:uppercase; }.live-signal i { width:8px; height:8px; border-radius:50%; background:#5b904d; box-shadow:0 0 0 5px rgba(91,144,77,.14); animation:signal-pulse 2s ease-in-out infinite; }
 .hero-artifact { position:relative; min-height:505px; overflow:hidden; background:#06162c; border:1px solid #2b5e8e; box-shadow:14px 14px 0 var(--deep); isolation:isolate; }
 .artifact-grid { position:absolute; inset:0; z-index:-1; background-image:linear-gradient(rgba(77,173,255,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(77,173,255,.13) 1px,transparent 1px),radial-gradient(circle at 60% 38%,rgba(0,137,255,.28),transparent 48%); background-size:32px 32px,32px 32px,auto; }
-.artifact-image { position:absolute; inset:0; overflow:hidden; }
+.artifact-image { position:absolute; z-index:1; inset:0; overflow:hidden; }
 .artifact-image img { position:absolute; top:-3%; left:-22%; width:145%; max-width:none; height:auto; }
 .artifact-label { position:absolute; z-index:3; left:20px; bottom:18px; display:flex; flex-direction:column; gap:5px; padding:11px 14px; color:white; background:rgba(5,18,38,.84); border-left:4px solid #0da8ff; backdrop-filter:blur(8px); }.artifact-label span { color:#70c8ff; font:700 8px var(--font-geist-mono); letter-spacing:.13em; text-transform:uppercase; }.artifact-label strong { font:850 12px var(--font-geist-mono); letter-spacing:.06em; }
 .artifact-coordinates { position:absolute; z-index:3; right:16px; bottom:18px; color:#9dd8ff; text-align:right; font:700 8px/1.55 var(--font-geist-mono); letter-spacing:.1em; }
