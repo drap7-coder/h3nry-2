@@ -21,3 +21,24 @@ test("has no disposable starter preview", async () => {
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.equal(manifest.dependencies["react-loading-skeleton"], undefined);
 });
+
+test("separates the lab into focused product routes", async () => {
+  const nav = await readFile(new URL("app/site-nav.tsx", root), "utf8");
+  const home = await readFile(new URL("app/page.tsx", root), "utf8");
+  const collection = await readFile(new URL("app/collection/collection-manager.tsx", root), "utf8");
+  const compare = await readFile(new URL("app/compare/compare-tool.tsx", root), "utf8");
+  assert.match(nav, /\/collection/);
+  assert.match(nav, /\/compare/);
+  assert.match(nav, /\/watches/);
+  assert.match(nav, /\/value/);
+  assert.match(home, /A lab, not a landing page/);
+  assert.match(collection, /localStorage/);
+  assert.match(compare, /Lab readout/);
+});
+
+test("uses real watch photography in the shared catalog", async () => {
+  const data = await readFile(new URL("app/watch-data.ts", root), "utf8");
+  assert.match(data, /rolex-gmt-pepsi\.jpg/);
+  assert.match(data, /omega-speedmaster\.jpg/);
+  assert.match(data, /tudor-bb58\.jpg/);
+});

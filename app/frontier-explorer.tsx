@@ -58,12 +58,6 @@ export function FrontierExplorer() {
 
   return (
     <main>
-      <nav className="nav shell" aria-label="Primary navigation">
-        <a className="brand image-logo-brand" href="#top" aria-label="H3nry Watch Lab home"><Image src="/h3nry-watch-lab-logo.png" width={58} height={58} priority alt="H3nry Watch Lab block-built watch logo" /></a>
-        <div className="nav-links"><a href="#frontier">Frontier</a><a href="#shortlist">Shortlist</a><a href="#method">Method</a></div>
-        <button className="collection-button" onClick={() => setOwnedOnly(!ownedOnly)} aria-pressed={ownedOnly}>{ownedOnly ? "Showing collection" : "My collection"}<span>{portfolio.length}</span></button>
-      </nav>
-
       <section className="atlas-hero" id="top">
         <div className="hero shell">
           <div className="hero-copy">
@@ -134,7 +128,6 @@ export function FrontierExplorer() {
 
       <section id="method" className="method"><div className="shell method-grid"><div><p className="eyebrow light">How the map is made / 03</p><h2>Signal, not hype.</h2></div><div className="method-steps"><article><span>01</span><h3>Measure the object</h3><p>Movement, construction, finishing and functional integrity establish the quality baseline.</p></article><article><span>02</span><h3>Read the market</h3><p>Observed prices, depth, volatility and service risk ground the score in reality.</p></article><article><span>03</span><h3>Map the frontier</h3><p>We surface the pieces delivering the most enduring substance per dollar.</p></article></div></div></section>
 
-      <footer className="footer shell"><a className="brand image-logo-brand footer-logo" href="#top"><Image src="/h3nry-watch-lab-logo.png" width={86} height={86} alt="H3nry Watch Lab block-built watch logo" /></a><p>Independent watch intelligence.<br />Built for the curious.</p><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
